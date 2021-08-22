@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Review</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+       
+        <div class="nav">
+            
+            <div class="dropdown" onclick="burgertoggle()">
+                <div class="burger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="buttons"  onclick="burgertoggle()">
+                    <button onclick="api('India');burgertoggle()">India</button> 
+                    <button onclick="api('US');burgertoggle()">United States</button>
+                    <button onclick="api('China');burgertoggle()">China</button>
+                    <button onclick="api('Russia');burgertoggle()">Russia</button>
+                    <button onclick="api('Japan');burgertoggle()">Japan</button>
+                    <button onclick="api('Italy');burgertoggle()">Italy</button>
+                    <button onclick="api('Germany');burgertoggle()">Germany</button>
+                </div>
+                <div class="background"></div>
+            </div>
+            <div class="h1"><h1>Daily Currents</h1></div>
+        </div>
+      
+        <div class="container"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

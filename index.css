@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(13, 13, 14);
+    color:whitesmoke;
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+}
+.h1{
+    width:auto;
+    margin: auto;
+}
+.burger{
+    width:50px;
+    height:50px;
+    position: relative;
+    margin-left:10px;
+    z-index: 3;
+}
+.bar1,.bar2,.bar3{
+    background-color:whitesmoke;
+    width:30px;
+    height:3px;
+    position: absolute;
+    transition: transform 1s ease;
+}
+.bar2{
+    transform: translateY(10px);
+}
+.bar1{
+    transform: translateY(20px);
+}
+.bar3{
+    transform: translateY(30px);
+}
+.change .bar2{
+transform:translateY(20px)rotateZ(45deg);
+}
+.change .bar3
+{
+    transform:translateY(20px)rotateZ(-45deg);
+    }
+
+.change .bar1{
+    visibility: hidden;
+}
+.buttons{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width:200px;
+   
+}
+
+button{
+    display: block;
+    width:100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: transparent;
+    border:none;
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+}
+button:hover{
+   background-color: rgb(107, 13, 6);
+}
+.dropdown{
+    position: relative;
+}
+.background{
+    background-color: rgb(172, 44, 44);
+    width:700px;
+    height:800px;
+    border-radius: 70%;
+    position: absolute;
+    top:-20%;
+    left:-70%;
+    transform: translate(-40%,-30%);
+    display:none;
+    overflow-x: hidden;
+}
+.change{
+    display: block;
+}
+.container{
+    width:100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size:20px;
+    margin-top: 200px;
+}
+@media screen and (min-width:2560px)
+{
+    body,.burger,.container,button{
+        font-size: 3vh;
+    }
+    button{
+        width:400px;
+    }
+    .background{
+        width:1100px;
+        height:1400px;
+        border-radius: 70%;
+        position: absolute;
+        top:-20%;
+        left:-70%;
+        transform: translate(-40%,-30%);
+    }
+    .burger{
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+}
