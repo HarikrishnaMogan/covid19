@@ -16,7 +16,7 @@ function displaycount(count,con)
     card.className="card";
     if(count.length==0)
     {
-        card.innerHTML=`<h2>Country is wrong</h2>`;
+        card.innerHTML=`<h2 class="cases">Country is wrong</h2>`;
         container.append(card);
     }
     else{
